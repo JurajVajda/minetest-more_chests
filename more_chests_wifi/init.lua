@@ -1,3 +1,4 @@
+dofile(minetest.get_modpath("more_chests").."/aliases.lua")
 minetest.register_node("more_chests:wifi", {
 	description = "Wifi Chest",
 	tiles = {"wifi_top.png", "wifi_top.png", "wifi_side.png",

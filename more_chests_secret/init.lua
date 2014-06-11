@@ -1,3 +1,4 @@
+dofile(minetest.get_modpath("more_chests").."/aliases.lua")
 local function has_locked_chest_privilege(meta, player)
 	if player:get_player_name() ~= meta:get_string("owner") then
 		return false
