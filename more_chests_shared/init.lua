@@ -1,4 +1,3 @@
-dofile(minetest.get_modpath("more_chests").."/aliases.lua")
 local function has_locked_chest_privilege(meta, player)
 	local name = player:get_player_name()
 	local shared = " "..meta:get_string("shared").." "
@@ -112,3 +111,4 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_alias("chests_0gb_us:shared", "more_chests:shared")
