@@ -1,4 +1,3 @@
-dofile(minetest.get_modpath("more_chests").."/aliases.lua")
 minetest.register_node("more_chests:wifi", {
 	description = "Wifi Chest",
 	tiles = {"wifi_top.png", "wifi_top.png", "wifi_side.png",
@@ -45,3 +44,4 @@ minetest.register_on_joinplayer(function(player)
 	inv:set_size("more_chests:wifi", 8*4)
 end)
 
+minetest.register_alias("chests_0gb_us:wifi", "more_chests:wifi")
